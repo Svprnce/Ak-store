@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    list-style: none;
+    font-size: 19px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 5rem;
+}
+
+.img-thumbnail {
+    height: 10rem;
+    object-fit: contain;
+}
+
+.card {
+    height: 20rem;
+    min-height: max-content;
+}
+
+.product-img-div {
+    display: flex;
+    height: min-content;
+    margin-inline: auto;
+    padding: 2rem;
+}
+
+.product-img {
+    object-fit: contain;
+    margin: 0px auto;
+    height: max-content;
+}
+
+.spinner {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    height: max-content;
+    margin-bottom: 1rem;
+}
+
+.carousel-item>img {
+    height: max-content;
+}
+
+
+.login-form-container>form {
+    width: 70%;
+    display: flex;
+    margin: 0px auto;
+
+}
+
+.login-form-container>form>div>input {
+    width: 100%;
+}
+
+.order_card_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px sienna solid;
+
+}
+
+.order_img {
+    width: 30%;
+}
+
+.order_product_img {
+    object-fit: contain;
+    /* border: 1px sienna solid; */
+
+}
+
+.order_body {
+    width: 70%;
+    /* border: 1px sienna solid; */
+
+}
+
+/* search page */
+
+.searchdiv {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.searchdiv-left {
+    width: 20%;
+}
+
+.searchdiv-right {
+    width: 70%;
+}
+
+.scrolltotop {
+    position: fixed;
+    width: 2rem;
+    height: max-content;
+    text-align: center;
+    border-radius: 10%;
+    bottom: 1rem;
+    right: 2rem;
+    background-color: skyblue;
+    cursor: pointer;
+    z-index: 50;
+}
+
+/* footer */
+.footer {
+    background-color: black;
+    color: white;
+}
+
+
+/* History card Copied */
+
+#progressbar-1 {
+    color: #455A64;
+}
+
+#progressbar-1 li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+
+#progressbar-1 #step1:before {
+    content: "1";
+    color: #fff;
+    width: 29px;
+    margin-left: 22px;
+    padding-left: 11px;
+}
+
+#progressbar-1 #step2:before {
+    content: "2";
+    color: #fff;
+    width: 29px;
+}
+
+#progressbar-1 #step3:before {
+    content: "3";
+    color: #fff;
+    width: 29px;
+    margin-right: 22px;
+    text-align: center;
+}
+
+#progressbar-1 li:before {
+    line-height: 29px;
+    display: block;
+    font-size: 12px;
+    background: #455A64;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#progressbar-1 li:after {
+    content: '';
+    width: 121%;
+    height: 2px;
+    background: #455A64;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 15px;
+    z-index: -1;
+}
+
+#progressbar-1 li:nth-child(2):after {
+    left: 50%
+}
+
+#progressbar-1 li:nth-child(1):after {
+    left: 25%;
+    width: 121%
+}
+
+#progressbar-1 li:nth-child(3):after {
+    left: 25%;
+    width: 50%;
+}
+
+#progressbar-1 li.active:before,
+#progressbar-1 li.active:after {
+    background: #1266f1;
+}
+
+.card-stepper {
+    z-index: 0
+}
+
+.history {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.history-card{
+    border: 1px solid black;
+    width: 25rem;
+}
